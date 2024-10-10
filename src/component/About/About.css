@@ -1,0 +1,120 @@
+
+.about {
+    margin-top: 2rem;
+}
+.about__row {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center; 
+}
+
+.about__left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: url('../../../image-thumb.jpg') no-repeat center center / cover;
+    /* flex-basis: 120%; */
+}
+
+.play-icon {
+    font-size: 100px;
+    color: var(--clr-white);
+    padding: 5rem;
+}
+
+.about__right {
+    text-align: center;
+    flex-basis: 80%;
+    padding: 0 1rem;
+}
+
+.about__right-sub {
+    margin: 1rem 0;
+    font-size: var(--size-xs);
+    color: var(--clr-orange);
+    text-transform: uppercase;
+}
+
+.about__right h4 {
+    margin-bottom: 1rem;
+    font-size: var(--size-lg);
+    text-transform:capitalize;
+    font-weight:600;
+}
+
+.about__right p {
+    font-size: var(--size-sm);
+}
+
+
+/* =======================
+    media queries
+======================= */
+
+/* xs */
+/* @media (width >= 475px) { } */
+
+/* sm */
+/* @media (width >= 640px) { } */
+
+/* md */
+@media (width >= 768px) { 
+    .about__row {
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 4rem 0;
+        
+     }
+     .about__right {
+        padding: 0 2rem 2rem 2rem;
+        
+    }
+    .about__right-sub {
+        font-size: var(--size-sm);
+    }
+    .about__right h4 {
+        font-size: var(--size-xl);
+        text-align: left;
+    }
+
+    .about__right p {
+        text-align: justify;
+        word-break: break-all;
+    }
+}
+
+/* lg */
+@media (width >= 1024px) { 
+    .about__left {
+        height: 30vh;
+    }
+    .about__right-sub {
+        font-size: var(--size-base);
+        font-weight: 600;
+    }
+    .about__right h4 {
+        font-size: var(--size-2xl);
+    }
+    .about__right p {
+        max-width: 400px;
+        font-size: var(--size-base);
+    }
+}
+
+/* xl */
+@media (width >= 1280px) { 
+    .about__left {
+        height: 45vh;
+
+    }
+    .about__right h4 {
+        font-size: var(--size-3xl);
+        max-width: 300px;
+    }
+
+}
+
+/* 2xl */
+/* @media (width >= 1536px) { } */

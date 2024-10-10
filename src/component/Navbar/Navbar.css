@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+nav{
+    position: relative;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 200px;
+    bottom: 0;
+    padding: 5rem 2rem;
+    background-color: var(--clr-blue);
+    transition: right 0.4s ease-in-out;
+    z-index: 10;
+}
+
+.navbar__toggle {
+    right: -200px;
+}
+
+.navbar ul li {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.navbar ul li:hover {
+   /* color: var(--clr-orange); */
+   opacity: .5;
+}
+
+.navbar img {
+    display: block;
+    margin: .5rem auto ;
+    width: 60px;
+    cursor: pointer;
+}
+
+.mobile__nav {
+    display: flex;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: rgba(44, 37, 35, 0.4);
+    z-index: 30;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.mobile__nav:hover {
+    background-color: rgba(44, 37, 35, 0.6);
+    color: #f1f1f1;
+    right: 34px;
+}
+
+.active {
+    /* color: var(--clr-gray); */
+    color: var(--clr-orange);
+    opacity: 65%;
+  } 
+
+
+/* =======================
+    media queries
+======================= */
+
+/* xs */
+/* @media (width >= 475px) { } */
+
+/* sm */
+/* @media (width >= 640px) { } */
+
+/* md */
+@media (width >= 768px) { 
+    .navbar {
+        right: 0;
+        bottom: 90%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: transparent;
+        padding: 0 10%;
+
+    }
+    .dark__nav {
+        box-shadow: 0 4px 8px rgba(44, 37, 35, 0.5);
+        background-color: #f1f1f1;
+        transition: box-shadow 1s ease-in-out;
+        transition: background-color 1s ease-in-out;
+    }
+    .navbar img {
+        width: 80px;
+        /* cursor: pointer; */
+    }
+    
+    .navbar ul li {
+        display: inline-block;
+        margin: 1rem;
+        font-size: var(--size-sm);
+        cursor: pointer;
+    }
+    .active {
+        /* color: var(--clr-gray); */
+        color: red;
+        opacity: 65%;
+      } 
+      .mobile__nav {
+        display: none;
+    }
+    
+}
+
+/* lg */
+/* @media (width >= 1024px) { } */
+
+/* xl */
+/* @media (width >= 1280px) { } */
+
+/* 2xl */
+/* @media (width >= 1536px) { } */

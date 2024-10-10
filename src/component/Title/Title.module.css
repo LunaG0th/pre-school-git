@@ -1,0 +1,52 @@
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+    padding: 1rem 0;
+}
+
+.title p {
+    font-size: var(--size-xs);
+    color: var(--clr-orange);
+    text-transform: uppercase;
+}
+
+.title h4 {
+    font-size: var(--size-lg);
+}
+
+/* =======================
+    media queries
+======================= */
+/* md */
+@media (width >= 768px) {
+    .title p {
+        font-size: var(--size-sm);
+    }
+    
+    .title h4 {
+        font-size: var(--size-xl);
+    }
+ }
+
+ /* lg */
+ @media (width >= 1024px) {
+    .title p {
+        font-size: var(--size-base);
+        font-weight: 600;
+    }
+    
+    .title h4 {
+        font-size: var(--size-2xl);
+    }
+ }
+
+ /* xl */
+@media (width >= 1280px) {
+
+    .title h4 {
+        font-size: var(--size-3xl);
+    }
+}
